@@ -1,36 +1,28 @@
-html {
-  font-size: 14px;
-}
+@import url("https://fonts.cdnfonts.com/css/fresh-marker");
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
 
-/* .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem rgb(255, 255, 255), 0 0 0 0.25rem #007bff;
-} */
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-html,
 body {
   background-color: black;
-  margin-bottom: 60px;
+	font-size: 14px;
 }
 
-.graffitiTextBubble {
-  letter-spacing: 8px;
-  color: white;
-  font-size: 75px;
-  font-family: "Fresh Marker";
+h1 {
+	font-family: "Fresh Marker";
+	font-size: 10px;
+	@media (max-width: 768px) {
+		font-size: 1.3em;
+	}
 }
 
-.graffitiText {
+.logo {
+  text-align: center;
+  width: 65%;
+  margin: auto;
+   user-select: none;
+}
+
+.logo b{
+  font: 100px "Fresh Marker";
   -webkit-text-stroke: 3px white;
   background-image: linear-gradient(red 40%,orange 60%,yellow 100%);
   -webkit-background-clip: text;
@@ -38,7 +30,45 @@ body {
   background-clip: text;
   color: transparent;
   letter-spacing: 8px;
-  font-size: 70px;
-  font-family: "Fresh Marker";
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em red, 0 0 0.5em orange, 0 0 0.1em yellow, 0 10px 3px #000;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
 }
 
