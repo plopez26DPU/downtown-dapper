@@ -8,15 +8,37 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
+/* .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem rgb(255, 255, 255), 0 0 0 0.25rem #007bff;
+} */
 
 html {
   position: relative;
   min-height: 100%;
 }
 
+html,
 body {
+  background-color: black;
   margin-bottom: 60px;
 }
+
+.graffitiTextBubble {
+  letter-spacing: 8px;
+  color: white;
+  font-size: 75px;
+  font-family: "Fresh Marker";
+}
+
+.graffitiText {
+  -webkit-text-stroke: 3px white;
+  background-image: linear-gradient(red 40%,orange 60%,yellow 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 8px;
+  font-size: 70px;
+  font-family: "Fresh Marker";
+}
+
