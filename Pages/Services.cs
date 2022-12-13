@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Downtown_Dapper.Pages;
 
-public class PrivacyModel : PageModel
+public class Services : PageModel
 {
-    private readonly ILogger<PrivacyModel> _logger;
+    private readonly ILogger<Services> _logger;
 
-    public PrivacyModel(ILogger<PrivacyModel> logger)
+    public Services(ILogger<Services> logger)
     {
         _logger = logger;
     }
